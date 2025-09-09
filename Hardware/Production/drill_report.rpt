@@ -1,0 +1,29 @@
+Drill report for SparkFun_Qwiic_Fingerprint_Sensor_FPC2534_panelized.kicad_pcb
+Created on 2025-09-09T14:55:51-0600
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  F.Cu                      front
+    L2 :  In1.Cu                    in1
+    L3 :  In2.Cu                    in2
+    L4 :  B.Cu                      back
+
+
+Drill file 'SparkFun_Qwiic_Fingerprint_Sensor_FPC2534_panelized.drl' contains
+    plated through holes:
+    =============================================================
+    T1  0.300mm  0.0118"  (1425 holes)
+    T2  0.600mm  0.0236"  (100 holes)  (with 100 slots)
+    T3  1.016mm  0.0400"  (350 holes)
+    T4  3.100mm  0.1220"  (100 holes)
+
+    Total plated holes count 1975
+
+
+Not plated through holes are merged with plated holes
+    unplated through holes:
+    =============================================================
+    T5  0.650mm  0.0256"  (50 holes)
+    T6  2.300mm  0.0906"  (25 holes)
+
+    Total unplated holes count 75
