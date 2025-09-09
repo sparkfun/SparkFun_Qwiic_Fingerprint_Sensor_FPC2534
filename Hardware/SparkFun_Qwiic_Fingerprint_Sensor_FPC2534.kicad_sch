@@ -6,8 +6,8 @@
 	(paper "USLetter")
 	(title_block
 		(title "SparkFun Qwiic Fingerprint Sensor FPC2534")
-		(date "2025-07-24")
-		(rev "v10")
+		(date "2025-08-29")
+		(rev "v11")
 		(company "SparkFun Electronics")
 		(comment 1 "Design by: N. Seidle")
 	)
@@ -1295,7 +1295,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "SparkFun cap capacitor"
+			(property "ki_keywords" "SparkFun cap capacitor 1uF"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1697,6 +1697,119 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "SparkFun-Connector:Conn_01x01"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x01"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "SparkFun-Connector:1x01"
+				(at 0 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Basic 0.1\" PTH"
+				(at 0 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "SparkFun connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x01_1_1"
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.27 -1.27)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3055,7 +3168,13 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "SparkFun-Hardware:Standoff"
+		(symbol "SparkFun-Hardware:Standoff_Connected"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -3077,7 +3196,7 @@
 					(hide yes)
 				)
 			)
-			(property "Footprint" "SparkFun-Hardware:Standoff"
+			(property "Footprint" "SparkFun-Hardware:Standoff_Connected"
 				(at 0 -7.62 0)
 				(effects
 					(font
@@ -3104,7 +3223,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "SparkFun #4 screw stand off"
+			(property "ki_keywords" "SparkFun #4 screw stand off electrically connected"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3122,7 +3241,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "Standoff_1_1"
+			(symbol "Standoff_Connected_1_1"
 				(circle
 					(center 0 0)
 					(radius 1.27)
@@ -3132,6 +3251,24 @@
 					)
 					(fill
 						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
 					)
 				)
 			)
@@ -3826,7 +3963,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://docs.broadcom.com/docs/AV02-0551EN"
+			(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 				(at 0 -10.16 0)
 				(effects
 					(font
@@ -4079,6 +4216,105 @@
 					(length 0)
 					(hide yes)
 					(name "3.3V"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "SparkFun-PowerSymbol:EGND"
+			(power)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "EGND"
+				(at 0 -3.81 0)
+				(do_not_autoplace)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"EGND\" , ground"
+				(at 0 -8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "SparkFun global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "EGND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "EGND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(hide yes)
+					(name "EGND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5999,6 +6235,17 @@
 		)
 		(uuid "11ca2879-9f51-4d8f-b6fd-0b18db035b96")
 	)
+	(text "Cut BZL to isolate\nbezel connections \nfrom ground"
+		(exclude_from_sim no)
+		(at 194.31 83.82 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 132 132 132 1)
+			)
+		)
+		(uuid "19878114-ca30-4406-87db-cbe4bbf255f4")
+	)
 	(text "USB"
 		(exclude_from_sim no)
 		(at 44.45 20.32 0)
@@ -6029,7 +6276,7 @@
 		)
 		(uuid "213d8d8e-9ad7-43cc-bdb0-af67dffe8850")
 	)
-	(text "GPIO must be\ndriven by the host"
+	(text "Driven via \nsoftware command"
 		(exclude_from_sim no)
 		(at 80.01 111.76 0)
 		(effects
@@ -6063,7 +6310,7 @@
 	)
 	(text "Default interface\nis I²C"
 		(exclude_from_sim no)
-		(at 111.76 146.05 0)
+		(at 140.97 142.24 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6101,16 +6348,6 @@
 			)
 		)
 		(uuid "5b29c290-6dea-43b6-b24a-58eca8d7388b")
-	)
-	(text "Max input voltage: 6V"
-		(exclude_from_sim no)
-		(at 125.73 67.31 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "65175902-e436-456d-b797-e253ed902652")
 	)
 	(text "USB"
 		(exclude_from_sim no)
@@ -6193,9 +6430,9 @@
 		)
 		(uuid "b689ebfb-251b-4a2a-8727-5e8329deba43")
 	)
-	(text "7-bit Unshifted I²C Address: 0x24"
+	(text "7-bit Unshifted \nI²C Address: 0x24"
 		(exclude_from_sim no)
-		(at 212.09 83.82 0)
+		(at 212.09 77.47 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6316,13 +6553,19 @@
 		(at 198.12 72.39)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "5934d2ce-69bf-4055-966f-25fc61cff66d")
+		(uuid "4466a82e-51d7-40ae-b7ce-53462cc6214b")
 	)
 	(junction
 		(at 134.62 48.26)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5e06c23a-6295-48c8-8a97-01ef5a49fd3d")
+	)
+	(junction
+		(at 190.5 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "777b8205-1101-4a89-88fd-5487ee4e30d9")
 	)
 	(junction
 		(at 116.84 129.54)
@@ -6421,6 +6664,16 @@
 			(type default)
 		)
 		(uuid "0c8d60ee-2657-49e2-a295-e90de5ae28c5")
+	)
+	(wire
+		(pts
+			(xy 190.5 72.39) (xy 190.5 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d703ff6-602f-4b32-81df-ea69b4ae0eee")
 	)
 	(wire
 		(pts
@@ -6564,6 +6817,16 @@
 	)
 	(wire
 		(pts
+			(xy 161.29 74.93) (xy 161.29 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2492b4cd-5b15-410b-af84-46ec4c46551e")
+	)
+	(wire
+		(pts
 			(xy 207.01 124.46) (xy 208.28 124.46)
 		)
 		(stroke
@@ -6644,7 +6907,7 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 69.85) (xy 198.12 69.85)
+			(xy 199.39 69.85) (xy 190.5 69.85)
 		)
 		(stroke
 			(width 0)
@@ -6664,13 +6927,23 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 177.8) (xy 138.43 177.8)
+			(xy 130.81 182.88) (xy 132.08 182.88)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2d50148a-24aa-41d6-9d13-55b9c8289fa5")
+		(uuid "2d0acc15-1f92-4c86-aadf-f62872b10c58")
+	)
+	(wire
+		(pts
+			(xy 180.34 74.93) (xy 180.34 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2dfdf570-c8f6-49cb-beaa-fbf8b6c26315")
 	)
 	(wire
 		(pts
@@ -6751,6 +7024,16 @@
 			(type default)
 		)
 		(uuid "3dd57f9a-651f-4423-8fa4-a4924d35c6dc")
+	)
+	(wire
+		(pts
+			(xy 198.12 72.39) (xy 199.39 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f7a39dd-da6a-4667-a161-3ee94af2b6ad")
 	)
 	(wire
 		(pts
@@ -6916,6 +7199,16 @@
 	)
 	(wire
 		(pts
+			(xy 167.64 74.93) (xy 167.64 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6975cb80-ffd6-43ea-be7f-b3e1493a0d15")
+	)
+	(wire
+		(pts
 			(xy 110.49 187.96) (xy 111.76 187.96)
 		)
 		(stroke
@@ -6926,7 +7219,7 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 72.39) (xy 198.12 73.66)
+			(xy 190.5 69.85) (xy 190.5 72.39)
 		)
 		(stroke
 			(width 0)
@@ -6996,26 +7289,6 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 69.85) (xy 198.12 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "76d6fd06-4df6-4357-8557-10893a724d07")
-	)
-	(wire
-		(pts
-			(xy 132.08 177.8) (xy 133.35 177.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "76f1d681-9ff8-43ad-a1af-e7350e04f5e4")
-	)
-	(wire
-		(pts
 			(xy 87.63 186.69) (xy 87.63 187.96)
 		)
 		(stroke
@@ -7053,6 +7326,16 @@
 			(type default)
 		)
 		(uuid "7f739221-d027-4e08-b219-79647383ad5f")
+	)
+	(wire
+		(pts
+			(xy 198.12 72.39) (xy 198.12 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "816c9434-803a-4180-b8b2-4f773f5c932b")
 	)
 	(wire
 		(pts
@@ -7104,6 +7387,16 @@
 			(type default)
 		)
 		(uuid "8774d748-ca86-488a-9e57-d2c4e7fb7d29")
+	)
+	(wire
+		(pts
+			(xy 130.81 180.34) (xy 132.08 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88f5d637-107b-4f4e-9d6a-6529dbbc148f")
 	)
 	(wire
 		(pts
@@ -7185,16 +7478,6 @@
 			(type default)
 		)
 		(uuid "99e33849-29c3-4158-a1f1-95ab0b6a4ba9")
-	)
-	(wire
-		(pts
-			(xy 133.35 177.8) (xy 133.35 176.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9ae52e10-0beb-4131-9b7e-3401a8ee3414")
 	)
 	(wire
 		(pts
@@ -7440,16 +7723,6 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 176.53) (xy 137.16 177.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d3068989-7dee-406f-a886-d21990df638f")
-	)
-	(wire
-		(pts
 			(xy 134.62 46.99) (xy 134.62 48.26)
 		)
 		(stroke
@@ -7572,6 +7845,16 @@
 	)
 	(wire
 		(pts
+			(xy 196.85 72.39) (xy 198.12 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e37913e3-d782-4c0c-b16e-093ef64f3d32")
+	)
+	(wire
+		(pts
 			(xy 34.29 177.8) (xy 34.29 184.15)
 		)
 		(stroke
@@ -7622,16 +7905,6 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 72.39) (xy 199.39 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "eb034f81-13b8-4225-b301-97a0809e78db")
-	)
-	(wire
-		(pts
 			(xy 91.44 48.26) (xy 101.6 48.26)
 		)
 		(stroke
@@ -7652,6 +7925,16 @@
 	)
 	(wire
 		(pts
+			(xy 173.99 74.93) (xy 173.99 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2e323bf-4b4a-411a-a6c7-070fd14eb877")
+	)
+	(wire
+		(pts
 			(xy 198.12 43.18) (xy 198.12 41.91)
 		)
 		(stroke
@@ -7659,6 +7942,16 @@
 			(type default)
 		)
 		(uuid "f7574644-aa85-4ccb-8821-011f52d6af3e")
+	)
+	(wire
+		(pts
+			(xy 190.5 72.39) (xy 191.77 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f8136248-056e-4e45-a246-5417a1e62dbf")
 	)
 	(polyline
 		(pts
@@ -7721,9 +8014,9 @@
 		)
 		(uuid "febfd480-c329-41be-885c-a079204c06d7")
 	)
-	(global_label "SCL"
+	(global_label "SDA"
 		(shape input)
-		(at 132.08 177.8 180)
+		(at 130.81 182.88 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7731,9 +8024,9 @@
 			)
 			(justify right)
 		)
-		(uuid "0e401d7b-6a49-4334-90ac-fff98ae55ced")
+		(uuid "0908e81f-64e0-43a7-955d-765b44eb78c6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 125.5872 177.8 0)
+			(at 124.2567 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8249,28 +8542,6 @@
 			)
 		)
 	)
-	(global_label "SDA"
-		(shape input)
-		(at 138.43 177.8 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "98c9d972-8239-42c3-9d8f-004d9511283f")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 144.9833 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "GPIO1"
 		(shape input)
 		(at 87.63 184.15 180)
@@ -8306,6 +8577,28 @@
 		(uuid "9be87d89-9c3e-4115-9828-7095e9429618")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 103.0295 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SCL"
+		(shape input)
+		(at 130.81 180.34 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9e0ab084-fb57-45aa-a654-8359b3e2ade3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 124.3172 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8580,72 +8873,6 @@
 		)
 	)
 	(symbol
-		(lib_id "SparkFun-Connector:TestPoint_0.75mm")
-		(at 133.35 176.53 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "005a30d4-3696-435d-9738-cc1dcfcabb1c")
-		(property "Reference" "TP3"
-			(at 133.35 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TestPoint_0.75mm"
-			(at 133.35 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "SparkFun-Connector:TestPoint-0.75mm"
-			(at 133.35 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 133.35 184.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Test Point"
-			(at 133.35 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8616fde8-2a72-4fd3-8d7e-c460a7971381")
-		)
-		(instances
-			(project "SparkFun_Qwiic_Fingerprint_Scanner_FPC2534"
-				(path "/e3dd3ae4-244d-4cba-9cca-5d2abf83f29a"
-					(reference "TP3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "SparkFun-PowerSymbol:3.3V")
 		(at 116.84 115.57 0)
 		(unit 1)
@@ -8781,8 +9008,75 @@
 		)
 	)
 	(symbol
+		(lib_id "SparkFun-Hardware:Standoff_Connected")
+		(at 173.99 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0969ff60-4588-4a8a-8d37-3526a24698b2")
+		(property "Reference" "ST7"
+			(at 173.99 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "Standoff"
+			(at 173.99 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SparkFun-Hardware:Standoff_Connected"
+			(at 173.99 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 173.99 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Drill holes for mechanically mounting via screws, standoffs, etc."
+			(at 173.99 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d204188e-b7be-42ad-a4b8-d29c527b00cf")
+		)
+		(instances
+			(project "SparkFun_Qwiic_Fingerprint_Sensor_FPC2534"
+				(path "/e3dd3ae4-244d-4cba-9cca-5d2abf83f29a"
+					(reference "ST7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "SparkFun-PowerSymbol:GND")
-		(at 198.12 73.66 0)
+		(at 190.5 73.66 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8790,7 +9084,7 @@
 		(dnp no)
 		(uuid "11340c41-3fd8-4c30-8422-7d3c3c6975fc")
 		(property "Reference" "#PWR0125"
-			(at 198.12 80.01 0)
+			(at 190.5 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8799,7 +9093,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 198.12 77.47 0)
+			(at 190.5 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8807,7 +9101,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 198.12 73.66 0)
+			(at 190.5 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8816,7 +9110,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 198.12 73.66 0)
+			(at 190.5 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8825,7 +9119,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 198.12 73.66 0)
+			(at 190.5 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9726,6 +10020,73 @@
 		)
 	)
 	(symbol
+		(lib_id "SparkFun-PowerSymbol:EGND")
+		(at 161.29 74.93 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3df7f6b5-e25a-4d0c-9af6-587908401d88")
+		(property "Reference" "#PWR01"
+			(at 161.29 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "EGND"
+			(at 161.29 78.74 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 161.29 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 161.29 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"EGND\" , ground"
+			(at 161.29 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "83a66a55-7327-45d5-a462-190a151c04b8")
+		)
+		(instances
+			(project ""
+				(path "/e3dd3ae4-244d-4cba-9cca-5d2abf83f29a"
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "SparkFun-Jumper:SolderJumper_3_Bridged123")
 		(at 210.82 124.46 180)
 		(unit 1)
@@ -10378,7 +10739,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://docs.broadcom.com/docs/AV02-0551EN"
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 46.99 133.35 0)
 			(effects
 				(font
@@ -10565,6 +10926,140 @@
 		)
 	)
 	(symbol
+		(lib_id "SparkFun-Hardware:Standoff_Connected")
+		(at 161.29 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5adbad17-6e5a-4ab4-b172-676f3ca870df")
+		(property "Reference" "ST5"
+			(at 161.29 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "Standoff"
+			(at 161.29 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SparkFun-Hardware:Standoff_Connected"
+			(at 161.29 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 161.29 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Drill holes for mechanically mounting via screws, standoffs, etc."
+			(at 161.29 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e671a2e9-e4c8-4b76-8f90-dff72b7016bf")
+		)
+		(instances
+			(project ""
+				(path "/e3dd3ae4-244d-4cba-9cca-5d2abf83f29a"
+					(reference "ST5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SparkFun-PowerSymbol:EGND")
+		(at 167.64 74.93 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5f9efcbb-d221-4826-9153-96743a083cd3")
+		(property "Reference" "#PWR02"
+			(at 167.64 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "EGND"
+			(at 167.64 78.74 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 167.64 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 167.64 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"EGND\" , ground"
+			(at 167.64 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c49b0555-021e-4a49-84dc-1c8976f38661")
+		)
+		(instances
+			(project "SparkFun_Qwiic_Fingerprint_Sensor_FPC2534"
+				(path "/e3dd3ae4-244d-4cba-9cca-5d2abf83f29a"
+					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "SparkFun-Aesthetic:OSHW_Logo")
 		(at 252.73 162.56 0)
 		(unit 1)
@@ -10689,72 +11184,6 @@
 			(project "SparkFun_Qwiic_Fingerprint_Scanner_FPC2534"
 				(path "/e3dd3ae4-244d-4cba-9cca-5d2abf83f29a"
 					(reference "#PWR014")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "SparkFun-Connector:TestPoint_0.75mm")
-		(at 137.16 176.53 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "68282e0c-f886-40ec-b9cc-aa2e15d06f09")
-		(property "Reference" "TP4"
-			(at 137.16 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TestPoint_0.75mm"
-			(at 137.16 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "SparkFun-Connector:TestPoint-0.75mm"
-			(at 137.16 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 137.16 184.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Test Point"
-			(at 137.16 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "aba3c705-8920-42e7-a7f3-a3575c08e857")
-		)
-		(instances
-			(project "SparkFun_Qwiic_Fingerprint_Scanner_FPC2534"
-				(path "/e3dd3ae4-244d-4cba-9cca-5d2abf83f29a"
-					(reference "TP4")
 					(unit 1)
 				)
 			)
@@ -10886,70 +11315,6 @@
 			(project "SparkFun_Qwiic_Fingerprint_Scanner_FPC2534"
 				(path "/e3dd3ae4-244d-4cba-9cca-5d2abf83f29a"
 					(reference "#PWR016")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "SparkFun-Hardware:Standoff")
-		(at 250.19 179.07 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6e3b39aa-ef40-471c-841a-1bb2d5427ae8")
-		(property "Reference" "ST3"
-			(at 250.19 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Standoff"
-			(at 250.19 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "SparkFun-Hardware:Standoff"
-			(at 250.19 186.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 250.19 184.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Drill holes for mechanically mounting via screws, standoffs, etc."
-			(at 250.19 189.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "SparkFun_Qwiic_Fingerprint_Scanner_FPC2534"
-				(path "/e3dd3ae4-244d-4cba-9cca-5d2abf83f29a"
-					(reference "ST3")
 					(unit 1)
 				)
 			)
@@ -11666,6 +12031,71 @@
 		)
 	)
 	(symbol
+		(lib_id "SparkFun-Connector:Conn_01x01")
+		(at 137.16 182.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8cc79f6f-538f-4f18-ae46-6f8896dabe18")
+		(property "Reference" "J6"
+			(at 137.16 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x01"
+			(at 137.16 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SparkFun-Connector:1x01"
+			(at 137.16 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 137.16 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Basic 0.1\" PTH"
+			(at 137.16 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ebc756d9-be2c-4f3d-9375-29bed1d56007")
+		)
+		(instances
+			(project "SparkFun_Qwiic_Fingerprint_Sensor_FPC2534"
+				(path "/e3dd3ae4-244d-4cba-9cca-5d2abf83f29a"
+					(reference "J6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "SparkFun-Resistor:1k_0603")
 		(at 78.74 125.73 90)
 		(unit 1)
@@ -11903,6 +12333,73 @@
 		)
 	)
 	(symbol
+		(lib_id "SparkFun-PowerSymbol:EGND")
+		(at 180.34 74.93 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "92b13e7e-76b8-4748-8e15-5402e4c27028")
+		(property "Reference" "#PWR07"
+			(at 180.34 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "EGND"
+			(at 180.34 78.74 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 180.34 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 180.34 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"EGND\" , ground"
+			(at 180.34 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d24c8848-0ec4-457d-aa11-fa540ec306d0")
+		)
+		(instances
+			(project "SparkFun_Qwiic_Fingerprint_Sensor_FPC2534"
+				(path "/e3dd3ae4-244d-4cba-9cca-5d2abf83f29a"
+					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "SparkFun-Resistor:5.1k_0603")
 		(at 62.23 57.15 90)
 		(unit 1)
@@ -12054,6 +12551,73 @@
 			(project ""
 				(path "/e3dd3ae4-244d-4cba-9cca-5d2abf83f29a"
 					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SparkFun-Hardware:Standoff_Connected")
+		(at 180.34 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "aa7e225b-c7d8-4743-bf7a-f387492b5b3c")
+		(property "Reference" "ST8"
+			(at 180.34 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "Standoff"
+			(at 180.34 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SparkFun-Hardware:Standoff_Connected"
+			(at 180.34 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 180.34 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Drill holes for mechanically mounting via screws, standoffs, etc."
+			(at 180.34 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4c209708-0367-4d03-87b5-07b9d6ac2c0c")
+		)
+		(instances
+			(project "SparkFun_Qwiic_Fingerprint_Sensor_FPC2534"
+				(path "/e3dd3ae4-244d-4cba-9cca-5d2abf83f29a"
+					(reference "ST8")
 					(unit 1)
 				)
 			)
@@ -12655,6 +13219,140 @@
 		)
 	)
 	(symbol
+		(lib_id "SparkFun-Connector:Conn_01x01")
+		(at 137.16 180.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c01c09e2-7388-4540-b74d-f0f0082e8ee6")
+		(property "Reference" "J3"
+			(at 139.7 179.0699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x01"
+			(at 139.7 181.6099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "SparkFun-Connector:1x01"
+			(at 137.16 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 137.16 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Basic 0.1\" PTH"
+			(at 137.16 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ab58a079-e63b-4f75-bb32-9afaf92e8fd6")
+		)
+		(instances
+			(project ""
+				(path "/e3dd3ae4-244d-4cba-9cca-5d2abf83f29a"
+					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SparkFun-PowerSymbol:EGND")
+		(at 173.99 74.93 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c3486472-d5cd-4c28-b6e4-db29c2dc6baa")
+		(property "Reference" "#PWR04"
+			(at 173.99 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "EGND"
+			(at 173.99 78.74 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 173.99 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 173.99 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"EGND\" , ground"
+			(at 173.99 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ecbbd471-441e-4fb9-b682-6702cb97bb8e")
+		)
+		(instances
+			(project "SparkFun_Qwiic_Fingerprint_Sensor_FPC2534"
+				(path "/e3dd3ae4-244d-4cba-9cca-5d2abf83f29a"
+					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "SparkFun-Aesthetic:qwiic_Logo")
 		(at 175.26 167.64 0)
 		(unit 1)
@@ -12785,70 +13483,6 @@
 		)
 	)
 	(symbol
-		(lib_id "SparkFun-Hardware:Standoff")
-		(at 254 179.07 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cd34e408-b76d-49ea-8815-1b539c4ef2e1")
-		(property "Reference" "ST4"
-			(at 254 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Standoff"
-			(at 254 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "SparkFun-Hardware:Standoff"
-			(at 254 186.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 254 184.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Drill holes for mechanically mounting via screws, standoffs, etc."
-			(at 254 189.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "SparkFun_Qwiic_Fingerprint_Scanner_FPC2534"
-				(path "/e3dd3ae4-244d-4cba-9cca-5d2abf83f29a"
-					(reference "ST4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "SparkFun-Regulator:RT9080-3.3")
 		(at 125.73 50.8 0)
 		(unit 1)
@@ -12859,7 +13493,7 @@
 		(fields_autoplaced yes)
 		(uuid "cdfa697e-e7e0-4f04-9164-1dfaae95c57a")
 		(property "Reference" "U2"
-			(at 125.73 39.37 0)
+			(at 125.73 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12867,7 +13501,7 @@
 			)
 		)
 		(property "Value" "RT9080-3.3"
-			(at 125.73 41.91 0)
+			(at 125.73 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12893,7 +13527,7 @@
 			)
 		)
 		(property "Description" "600mA low dropout linear regulator, with enable pin, 3.8V-6V input voltage range, 3.3V fixed positive output, SOT-23-5"
-			(at 125.73 50.8 0)
+			(at 125.73 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12902,7 +13536,7 @@
 			)
 		)
 		(property "PROD_ID" "VREG-19034"
-			(at 124.46 67.31 0)
+			(at 125.73 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12911,12 +13545,12 @@
 			)
 		)
 		(property "VMax" "5.5V"
-			(at 125.73 69.85 0)
+			(at 125.73 41.91 0)
+			(show_name yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Imax" "600mA"
@@ -12939,6 +13573,7 @@
 		)
 		(property "IMax" "600mA"
 			(at 125.73 44.45 0)
+			(show_name yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12964,70 +13599,6 @@
 			(project "SparkFun_Qwiic_Fingerprint_Scanner_FPC2534"
 				(path "/e3dd3ae4-244d-4cba-9cca-5d2abf83f29a"
 					(reference "U2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "SparkFun-Hardware:Standoff")
-		(at 250.19 175.26 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d0df3051-d613-4832-9f02-b8dc4d97e550")
-		(property "Reference" "ST2"
-			(at 250.19 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Standoff"
-			(at 250.19 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "SparkFun-Hardware:Standoff"
-			(at 250.19 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 250.19 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Drill holes for mechanically mounting via screws, standoffs, etc."
-			(at 250.19 185.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "SparkFun_Qwiic_Fingerprint_Scanner_FPC2534"
-				(path "/e3dd3ae4-244d-4cba-9cca-5d2abf83f29a"
-					(reference "ST2")
 					(unit 1)
 				)
 			)
@@ -13093,70 +13664,6 @@
 			(project "SparkFun Indoor Air Quality Sensor - SCD41 SEN55"
 				(path "/e3dd3ae4-244d-4cba-9cca-5d2abf83f29a"
 					(reference "#PWR0124")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "SparkFun-Hardware:Standoff")
-		(at 254 175.26 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "daa9d8af-8b94-4009-bf94-d716d7670a38")
-		(property "Reference" "ST1"
-			(at 254 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Standoff"
-			(at 254 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "SparkFun-Hardware:Standoff"
-			(at 254 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 254 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Drill holes for mechanically mounting via screws, standoffs, etc."
-			(at 254 185.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project ""
-				(path "/e3dd3ae4-244d-4cba-9cca-5d2abf83f29a"
-					(reference "ST1")
 					(unit 1)
 				)
 			)
@@ -13412,6 +13919,75 @@
 		)
 	)
 	(symbol
+		(lib_id "SparkFun-Jumper:SolderJumper_2_Bridged")
+		(at 194.31 72.39 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e0e622c5-0474-4a4f-999d-7a6cb5521e61")
+		(property "Reference" "JP5"
+			(at 193.6749 69.85 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Value" "BZL"
+			(at 194.31 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SparkFun-Jumper:Jumper_2_NC_Trace"
+			(at 194.564 67.818 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 194.31 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Solder Jumper, 2-pole, closed/bridged"
+			(at 194.31 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "da4f848f-6ed9-4cd1-a11c-092b67f64976")
+		)
+		(pin "2"
+			(uuid "2a459b9e-a26b-4b25-9d07-27dd560e4937")
+		)
+		(instances
+			(project "SparkFun_Qwiic_Fingerprint_Sensor_FPC2534"
+				(path "/e3dd3ae4-244d-4cba-9cca-5d2abf83f29a"
+					(reference "JP5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "SparkFun-Resistor:2.2k_0603")
 		(at 207.01 128.27 270)
 		(mirror x)
@@ -13485,6 +14061,73 @@
 			(project "SparkFun_Qwiic_Fingerprint_Sensor_FPC2534"
 				(path "/e3dd3ae4-244d-4cba-9cca-5d2abf83f29a"
 					(reference "R11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SparkFun-PowerSymbol:EGND")
+		(at 198.12 73.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e2bac943-d665-4a9d-91fa-5a0140a031be")
+		(property "Reference" "#PWR03"
+			(at 198.12 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "EGND"
+			(at 198.12 77.47 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 198.12 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 198.12 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"EGND\" , ground"
+			(at 198.12 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "290dd339-de99-4520-a4ab-a0c976dba515")
+		)
+		(instances
+			(project "SparkFun_Qwiic_Fingerprint_Sensor_FPC2534"
+				(path "/e3dd3ae4-244d-4cba-9cca-5d2abf83f29a"
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -13703,6 +14346,73 @@
 			(project "SparkFun Indoor Air Quality Sensor - SCD41 SEN55"
 				(path "/e3dd3ae4-244d-4cba-9cca-5d2abf83f29a"
 					(reference "FID2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SparkFun-Hardware:Standoff_Connected")
+		(at 167.64 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f0da8435-70ed-438a-827f-9983d2fdbeec")
+		(property "Reference" "ST6"
+			(at 167.64 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "Standoff"
+			(at 167.64 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SparkFun-Hardware:Standoff_Connected"
+			(at 167.64 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 167.64 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Drill holes for mechanically mounting via screws, standoffs, etc."
+			(at 167.64 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2732aaa5-b676-42d7-b156-19eeed48f6c9")
+		)
+		(instances
+			(project "SparkFun_Qwiic_Fingerprint_Sensor_FPC2534"
+				(path "/e3dd3ae4-244d-4cba-9cca-5d2abf83f29a"
+					(reference "ST6")
 					(unit 1)
 				)
 			)
