@@ -9,10 +9,10 @@ Before moving on to the assembly options below, solder either headers or wires t
 
 This Qwiic breakout requires some extra assembly compared to most of our Qwiic boards need as the FPC2534 needs to have its Reset (RST) Interrupt Request (IRQ) pins connected to GPIO pins on a microcontroller to work properly over I<sup>2</sup>C. 
 
-After soldering, connect the Qwiic Fingerprint Sensor - FPC2534 to the IoT RedBoard - RP2350 using a Qwiic cable then connect the Reset pin to <code>28</code> and the Interrupt Request pin to <code>29</code>, respectively. With everything wired up, your circuit should look similar to the photo below:
+After soldering, connect the Qwiic Fingerprint Sensor - FPC2534 to the IoT RedBoard - RP2350 using a Qwiic cable then connect the Reset pin to <code>28</code> and the Interrupt Request pin to <code>29</code>. With everything wired up, your circuit should look similar to the photo below:
 
 <figure markdown>
-[![Completed Qwiic Assembly with the RedBoard IoT - RP2350](./assets/img/Fingerprint_Sensor_Qwiic-I2C.jpg){ width="600"}](./assets/img/Fingerprint_Sensor_Qwiic-I2C.jpg "Click to enlarge")
+[![Completed Qwiic Assembly with the RedBoard IoT - RP2350](./assets/img/Fingerprint_Sensor_Qwiic-I2C.jpg){ width="800"}](./assets/img/Fingerprint_Sensor_Qwiic-I2C.jpg "Click to enlarge")
 </figure>
 
 ## UART Assembly
@@ -22,7 +22,7 @@ Enable the UART interface by opening the CFG2 jumper. Connect the Qwiic Fingerpr
 <table>
     <tr>
         <th>Fingerprint Sensor</th>
-        <th>RedBoard IoT</th>
+        <th>RedBoard IoT - RP2350</th>
     </tr>
     <tr>
         <td>TX</td>
@@ -41,7 +41,7 @@ Enable the UART interface by opening the CFG2 jumper. Connect the Qwiic Fingerpr
 After wiring everything up, your circuit should look similar to this photo:
 
 <figure markdown>
-[![Completed UART assembly with the RedBoard IoT - RP2350](./assets/img/Fingerprint_Sensor_Qwiic-UART.jpg){ width="600"}](./assets/img/Fingerprint_Sensor_Qwiic-UART.jpg "Click to enlarge")
+[![Completed UART assembly with the RedBoard IoT - RP2350](./assets/img/Fingerprint_Sensor_Qwiic-UART.jpg){ width="800"}](./assets/img/Fingerprint_Sensor_Qwiic-UART.jpg "Click to enlarge")
 </figure>
 
 
@@ -52,7 +52,7 @@ Finally, if you'd prefer to use the SPI interface, enable SPI by opening both co
 <table>
     <tr>
         <th>Fingerprint Sensor</th>
-        <th>RedBoard IoT</th>
+        <th>RedBoard IoT - RP2350</th>
     </tr>
     <tr>
         <td>PICO</td>
@@ -74,4 +74,4 @@ Finally, if you'd prefer to use the SPI interface, enable SPI by opening both co
 
 ## USB Assembly (Not supported)
 
-If you'd like to use the Fingerprint Sensor as a USB device, enable the USB interface by opening the CFG1 jumper.
+If you'd like to use the Fingerprint Sensor as a USB device, enable the USB interface by opening the CFG1 jumper and then connect it to a USB host device over USB-C.

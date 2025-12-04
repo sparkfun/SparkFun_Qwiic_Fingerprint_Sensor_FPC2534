@@ -2,7 +2,7 @@
 
 ## Arduino Library Limitations
 
-Reminder, the SparkFun FPC2534 Arduino Library currently only supports ESP32 and Raspberry RP2 (RP2040, RP2350) boards. The I2C Implemention of the FPC2534 device performs a dynamic payload transmission that is not supported by the Arduino Wire library. Because of this, a custom implementation is provided by this library for the ESP32 and RP2 platforms.
+Reminder, the SparkFun FPC2534 Arduino Library currently only supports ESP32 and Raspberry RP2 (RP2040, RP2350) boards when using I<sup>2</sup>C. The I<sup>2</sup>C Implemention of the FPC2534 device performs a dynamic payload transmission that is not supported by the Arduino Wire library. Because of this, a custom implementation is provided by this library for the ESP32 and RP2 platforms. If you'd like to create your own custom implementation for a different processor, you can take a look at I<sup>2</sup>C helpers we made for the ESP32 and RP2 processors [here](https://github.com/sparkfun/SparkFun_FPC2534_Arduino_Library/tree/main/src/sfTk).
 
 ## General Troubleshooting
 

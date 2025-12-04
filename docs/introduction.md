@@ -1,5 +1,5 @@
 <figure markdown>
-[![Qwiic Fingerprint Scanner - FPC2534 Banner Image](./assets/img/Fingerprint_Sensor_Qwiic-HGBanner.png){ width="600"}](https://www.sparkfun.com/sparkfun-fingerprint-sensor-fpc2534-qwiic.html)
+[![Qwiic Fingerprint Scanner - FPC2534 Banner Image](./assets/img/Fingerprint_Sensor_Qwiic-HGBanner.png){ width="1000"}](https://www.sparkfun.com/sparkfun-fingerprint-sensor-fpc2534-qwiic.html)
 </figure>
 
 The SparkFun FPC2534 Qwiic Fingerprint Sensor is a powerful, dual-purpose breakout that combines professional-grade biometric security with touch navigation. Built around the advanced FPC2354 sensor from Fingerprint Cards AB (FPC), this board handles the complex processing of fingerprint enrollment, encryption, and internal storage, ensuring your data remains secure without bogging down your host microcontroller.

@@ -7,7 +7,9 @@ Let's take a closer look at the FPC2534 sensor and other hardware on this Qwiic 
 
 ## FPC2534 Fingerprint Sensor
 
-The FPC2534 fingerprint sensor is a compact fingerprint sensor capable of enrolling and storing up to # of fingerprint templates and also has a navigation feature. The FPC2534 has a low-profile design that includes a hidden bezel tied to four ground pins. It communicates over UART, I<sup>2</sup>C, SPI and USB.  
+The FPC2534 fingerprint sensor is a compact fingerprint sensor capable of enrolling and storing up to 45 fingerprint templates and also has a four-way navigation feature.  The FPC2534 has a low-profile design that includes a hidden bezel tied to four ground pins. It communicates over UART, I<sup>2</sup>C, SPI and USB. It runs best powered with **3.3V** with a max current draw of ~**21mA** during active mode. For complete information on the FPC2534, refer to the [datasheet](./assets/component_documentation/SPC27317-5%20FPC2530.pdf).
+
+The sensor automatically creates and stores fingerprint templates as they are added in the device's flash memory. The FPC2534 also supports encrypted communication with a host device though this feature must be enabled by sending an AES key from the host to the FPC2534. For more information on enabling this feature, refer to the [Supplemental Information](./assets/component_documentation/spc27387-2-fpc2534-allkey-pro-supplement.pdf) document. 
 
 ## Connectors and Pinout
 
@@ -68,4 +70,8 @@ There are five solder jumpers on this board labeled: <b>CFG1</b>, <b>CFG2</b>, <
 
 ## Board Dimensions
 
-The SparkFun Fingerprint Sensor - FC2534 (Qwiic) matches the 1"x1" (25.4mm x 25.4mm) and has four mounting holes that fit a 4-40 screw. Note, all four of the mounting holes are plated to allow users to ground the board to their mount through these holes. 
+The SparkFun Fingerprint Sensor - FC2534 (Qwiic) matches the 1"x1" (25.4mm x 25.4mm) and has four mounting holes that fit a 4-40 screw. Note, all four of the mounting holes are plated to allow users to ground the board to their mount through these holes.
+
+<figure markdown>
+[![Board dimensions](./assets/board_files/SparkFun_Qwiic_Fingerprint_Sensor_FPC2534-Dimensions.jpg){ width="600"}](./assets/board_files/SparkFun_Qwiic_Fingerprint_Sensor_FPC2534-Dimensions.jpg "Click to enlarge")
+</figure>
